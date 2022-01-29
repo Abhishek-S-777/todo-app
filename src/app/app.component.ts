@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-list';
+  constructor(){
+    // setTimeout(() => {
+    //   this.title = "Changed title"
+    // },2000);
+  }
 }
+
+  
